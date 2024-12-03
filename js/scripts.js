@@ -1,15 +1,7 @@
-/*!
-* Start Bootstrap - Resume v7.0.6 (https://startbootstrap.com/theme/resume)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
+// Đợi cho DOM được tải xong
+window.addEventListener('DOMContentLoaded', () => {
 
-window.addEventListener('DOMContentLoaded', event => {
-
-    // Activate Bootstrap scrollspy on the main nav element
+    // Kích hoạt Bootstrap scrollspy trên phần tử sidebar
     const sideNav = document.body.querySelector('#sideNav');
     if (sideNav) {
         new bootstrap.ScrollSpy(document.body, {
@@ -18,14 +10,17 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     };
 
-    // Collapse responsive navbar when toggler is visible
+    // Thu nhỏ navbar khi người dùng nhấp vào các liên kết trên mobile
     const navbarToggler = document.body.querySelector('.navbar-toggler');
-    const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
-    );
-    responsiveNavItems.map(function (responsiveNavItem) {
+    const responsiveNavItems = document.querySelectorAll('#navbarResponsive .nav-link');
+    
+    // Lưu kiểu hiển thị của navbarToggler để tránh gọi `getComputedStyle` trong vòng lặp
+    const isNavbarVisible = window.getComputedStyle(navbarToggler).display !== 'none';
+
+    responsiveNavItems.forEach(responsiveNavItem => {
         responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
+            // Chỉ click navbarToggler khi nó hiển thị
+            if (isNavbarVisible) {
                 navbarToggler.click();
             }
         });
