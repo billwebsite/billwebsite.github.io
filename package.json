@@ -1,0 +1,24 @@
+{
+  "name": "billwebsite.github.io",
+  "version": "1.0.0",
+  "description": "My personal portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/myusername/billwebsite"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "html",
+    "css"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "sharp": "^0.33.5"
+  }
+}

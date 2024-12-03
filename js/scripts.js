@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
-    // Kích hoạt Bootstrap scrollspy trên phần tử sidebar
-    const sideNav = document.body.querySelector('#sideNav');
+    // Kích hoạt Bootstrap ScrollSpy trên phần tử sidebar
+    const sideNav = document.querySelector('#sideNav');
     if (sideNav) {
         new bootstrap.ScrollSpy(document.body, {
             target: '#sideNav',
@@ -9,18 +9,19 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     // Thu nhỏ navbar khi người dùng nhấp vào các liên kết trên mobile
-    const navbarToggler = document.body.querySelector('.navbar-toggler');
+    const navbarToggler = document.querySelector('.navbar-toggler');
     const responsiveNavItems = document.querySelectorAll('#navbarResponsive .nav-link');
 
-    // Lưu trạng thái của navbarToggler
-    const isNavbarVisible = navbarToggler && window.getComputedStyle(navbarToggler).display !== 'none';
+    if (navbarToggler) {
+        // Kiểm tra sự hiển thị của navbarToggler
+        const isNavbarVisible = window.getComputedStyle(navbarToggler).display !== 'none';
 
-    if (isNavbarVisible) {
-        // Đảm bảo click navbarToggler chỉ khi nó hiển thị
-        responsiveNavItems.forEach(responsiveNavItem => {
-            responsiveNavItem.addEventListener('click', () => {
-                navbarToggler.click();
+        if (isNavbarVisible) {
+            responsiveNavItems.forEach(navItem => {
+                navItem.addEventListener('click', () => {
+                    navbarToggler.click(); // Thu nhỏ navbar khi nhấp vào liên kết
+                });
             });
-        });
+        }
     }
 });
