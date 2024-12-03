@@ -142,13 +142,12 @@
                         300% for GameVerse finalist project.<br>
                         <em>Skills gained:</em> Multiplayer, shader optimization, UI animation.
                     </p>
-                    <div style="padding:56.25% 0 0 0;position:relative;">
-                        <!-- Sử dụng lazyload và data-src để trì hoãn tải iframe -->
-                        <iframe class="lazyload"
-                            data-src="https://player.vimeo.com/video/1029371396?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                            frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                            style="position:absolute;top:0;left:0;width:100%;height:100%;"
-                            title="Animal Push Royale Trailer"></iframe>
+
+                    <!-- Lazy-load video với facade (ảnh thu nhỏ) thay vì iframe trực tiếp -->
+                    <div class="video-container" style="padding: 56.25% 0 0 0; position: relative;">
+                        <img src="thumbnail.jpg" alt="Video Thumbnail" class="lazyload" data-src="thumbnail.jpg"
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; cursor: pointer;"
+                            onclick="this.src='https://player.vimeo.com/video/1029371396?badge=0&autopause=0&player_id=0&app_id=58479'">
                     </div>
 
                     <br><strong>VR Motion Sickness Research</strong><br>
@@ -164,574 +163,551 @@
                         <p>
                             <strong>Presentation at NVIDIA AI Summit 2024:</strong> akaVerse was honored to showcase
                             this project to Mr. Jensen Huang, CEO of NVIDIA, emphasizing our role in pioneering VR/AR
-                            technology. This event marked a significant achievement, bringing akaVerse's technological
-                            advancements in real-time simulation and virtual reality to the global stage.
-                        </p>
-                        <p>
-                            <em><strong>Highlights:</strong></em> <br>
-                            - Demonstrated real-time data integration with Omniverse to NVIDIA's top executives.<br>
-                            - Recognized as a key contributor to the future of AI and VR applications in immersive
-                            training.<br>
-                            - Strengthened akaVerse’s position as a leader in the AR/VR industry, proudly representing
-                            Vietnamese innovation in global tech.
+                            technology.
                         </p>
                     </div>
 
                     <em>Skills gained:</em> Omniverse, real-time monitoring, Python integration.
-
-                    <!-- Section for Facebook posts -->
-                    <div class="mb-3">
-                        <div class="facebook-posts">
-                            <!-- First iframe -->
-                            <iframe class="lazyload"
-                                data-src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fakaversefpt%2Fposts%2Fpfbid04x9RKv9CCPq5iY4jbxKmTV8iX8o6aLekyK4KorVuwiZonL3Ksj6u6J5fUfNnLtGEl&show_text=true&width=370"
-                                width="400" height="720" style="border:none;" scrolling="yes" frameborder="0"
-                                allowfullscreen="true"
-                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                                loading="lazy">
-                            </iframe>
-
-                            <!-- Second iframe -->
-                            <iframe class="lazyload"
-                                data-src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fakaversefpt%2Fposts%2Fpfbid0229y6PjTi8n4ED9i7vbjq494oFGLBAd4tTjTEdWCfvyc7dBgwyqHoGAB99vGukWDPl&show_text=true&width=500"
-                                width="500" height="720" style="border:none;" scrolling="yes" frameborder="0"
-                                allowfullscreen="true"
-                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                                loading="lazy">
-                            </iframe>
-                        </div>
-                    </div>
-
-                    <br><strong>Additional Skills Learned:</strong> Basic Swift and SwiftUI, AR development, multiplayer
-                    mechanics.
-                    </p>
                 </div>
-                <div class="flex-shrink-0">
-                    <span class="text-primary">May 2024 - Present</span>
-                </div>
-            </div>
 
-            <!-- Golden Sea Studio -->
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="flex-grow-1">
-                    <h3 class="mb-0">Junior Unity Developer</h3>
-                    <div class="subheading mb-3">Golden Sea Studio</div>
-                    <p>
-                        <strong>Merge Fruit Game</strong><br>
-                        - Independently developed "Merge Fruit," managing the entire lifecycle from concept to delivery.
-                        Worked closely with designers and artists to ensure smooth production.<br>
-                        <em>Skills gained:</em> Game development lifecycle, project management, Unity game optimization.
-                    <div class="mb-3">
-                        <img class="lazyload" data-src="assets/img/webp/GAMEPLAY.webp" alt=""
-                            style="width: 100%; max-width: 150px;" loading="lazy">
-                        <img class="lazyload" data-src="assets/img/webp/MergeFruit/GAMEPLAY_COMPLETE.webp" alt=""
-                            style="width: 100%; max-width: 150px;" loading="lazy">
-                        <img class="lazyload" data-src="assets/img/webp/MergeFruit/GAMEPLAY_REWARD.webp" alt=""
-                            style="width: 100%; max-width: 150px;" loading="lazy">
-                        <img class="lazyload" data-src="assets/img/webp/MergeFruit/HomePage.webp" alt=""
-                            style="width: 100%; max-width: 150px;" loading="lazy">
-                    </div>
-                    </p>
-                </div>
-                <div class="flex-shrink-0">
-                    <span class="text-primary">Jan 2024 - Mar 2024</span>
-                </div>
-            </div>
-
-            <!-- Gameloft Vietnam -->
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="flex-grow-1">
-                    <h3 class="mb-0">Game Developer Intern</h3>
-                    <div class="subheading mb-3">Gameloft Vietnam</div>
-                    <p>
-                        <strong>Applaydu Project</strong><br>
-                        - Contributed to the "Applaydu" game, managing configurations for multi-device compatibility and
-                        resolving UI/font issues. Recognized as the first intern programmer in the credits.<br>
-                        - Developed mini-games like "Treasure Toss" and "Animalody," utilizing Git and Scrum for
-                        effective teamwork.<br>
-                        <em>Skills gained:</em> Mobile game compatibility, UI design for games, Git and Scrum teamwork.
-                    <div style="padding:10% 0 35% 0;position:relative;">
-                        <iframe class="lazyload"
-                            data-src="https://player.vimeo.com/video/1029379454?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                            frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                            style="position:absolute;top:0;left:0;width:720px;height:480px;"
-                            title="Applaydu Game TreasureToss" loading="lazy">
-                        </iframe>
-                    </div>
-
-                    <iframe class="lazyload" width="720px" height="480px"
-                        data-src="https://www.youtube.com/embed/4JD4ru1F4jw"
-                        title="Animalody: Applaydu Kids Kinder Game Review 1080p Official Ferrero Trading Lux S.A. 4.4"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
-
-                    </p>
-
-                </div>
-                <div class="flex-shrink-0">
-                    <span class="text-primary">Jun 2023 - Dec 2023</span>
-                </div>
-            </div>
-
-            <!-- Golden Sea Studio Intern -->
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="flex-grow-1">
-                    <h3 class="mb-0">Game Developer Intern</h3>
-                    <div class="subheading mb-3">Golden Sea Studio</div>
-                    <p>
-                        <strong>Biboo - Drawing Game for Kids</strong><br>
-                        - Developed a creative drawing app designed for children, integrating animation and interactive
-                        features to encourage artistic exploration. Focused on intuitive UI design and adding playful
-                        animations to make drawing engaging for young users.<br>
-                        <em>Skills gained:</em> UI/UX design for kids, animation integration, creative problem-solving.
-                    </p>
-                    <p>
-                        <strong>Drink Game - Social Drinking Game</strong><br>
-                        - Worked on a board-style social game where players participate in mini-games and challenges
-                        with drinking elements, adding interactive UI and designing game logic for a seamless social
-                        experience.<br>
-                        <em>Skills gained:</em> Board game logic, interactive UI, game mechanics for social experiences.
-                    </p>
-                </div>
-                <div class="flex-shrink-0">
-                    <span class="text-primary">Apr 2023 - Jun 2023</span>
-                </div>
-            </div>
-
-
-            <!-- Marathon Education -->
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="flex-grow-1">
-                    <h3 class="mb-0">Computer Science Education Counselor</h3>
-                    <div class="subheading mb-3">Marathon Education</div>
-                    <p>
-                        <strong>Marathon Talent AR App</strong><br>
-                        - Developed an AR app for the Marathon Talent Competition, leading Team Codi. Responsible for
-                        curriculum planning and delivering personalized learning plans.<br>
-                        <em>Skills gained:</em> AR app development, educational content planning, online teaching.
-                    </p>
+                <!-- Facebook posts section -->
+                <div class="facebook-posts">
                     <iframe class="lazyload"
-                        data-src="https://player.vimeo.com/video/1029384069?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                        width="360" height="500" frameborder="0"
-                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                        title="MARATHON'S TEACHER GOT TALENT" loading="lazy"
-                        style="position:relative;top:0;left:0;width:20%;height:100%;"></iframe>
-
+                        data-src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fakaversefpt%2Fposts%2Fpfbid04x9RKv9CCPq5iY4jbxKmTV8iX8o6aLekyK4KorVuwiZonL3Ksj6u6J5fUfNnLtGEl&show_text=true&width=370"
+                        width="400" height="720" style="border:none;" scrolling="yes" frameborder="0"
+                        allowfullscreen="true" loading="lazy">
+                    </iframe>
+                    <iframe class="lazyload"
+                        data-src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fakaversefpt%2Fposts%2Fpfbid0229y6PjTi8n4ED9i7vbjq494oFGLBAd4tTjTEdWCfvyc7dBgwyqHoGAB99vGukWDPl&show_text=true&width=500"
+                        width="500" height="720" style="border:none;" scrolling="yes" frameborder="0"
+                        allowfullscreen="true" loading="lazy">
+                    </iframe>
                 </div>
-                <div class="flex-shrink-0">
-                    <span class="text-primary">Mar 2023 - Present</span>
+
+                <br><strong>Additional Skills Learned:</strong> Basic Swift and SwiftUI, AR development, multiplayer
+                mechanics.
+                </p>
+            </div>
+            <div class="flex-shrink-0">
+                <span class="text-primary">May 2024 - Present</span>
+            </div>
+        </div>
+
+        <!-- Golden Sea Studio -->
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">Junior Unity Developer</h3>
+                <div class="subheading mb-3">Golden Sea Studio</div>
+                <p>
+                    <strong>Merge Fruit Game</strong><br>
+                    - Independently developed "Merge Fruit," managing the entire lifecycle from concept to delivery.
+                    Worked closely with designers and artists to ensure smooth production.<br>
+                    <em>Skills gained:</em> Game development lifecycle, project management, Unity game optimization.
+                <div class="mb-3">
+                    <img class="lazyload" data-src="assets/img/webp/GAMEPLAY.webp" alt=""
+                        style="width: 100%; max-width: 150px;" loading="lazy">
+                    <img class="lazyload" data-src="assets/img/webp/MergeFruit/GAMEPLAY_COMPLETE.webp" alt=""
+                        style="width: 100%; max-width: 150px;" loading="lazy">
+                    <img class="lazyload" data-src="assets/img/webp/MergeFruit/GAMEPLAY_REWARD.webp" alt=""
+                        style="width: 100%; max-width: 150px;" loading="lazy">
+                    <img class="lazyload" data-src="assets/img/webp/MergeFruit/HomePage.webp" alt=""
+                        style="width: 100%; max-width: 150px;" loading="lazy">
+                </div>
+                </p>
+            </div>
+            <div class="flex-shrink-0">
+                <span class="text-primary">Jan 2024 - Mar 2024</span>
+            </div>
+        </div>
+
+        <!-- Gameloft Vietnam -->
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">Game Developer Intern</h3>
+                <div class="subheading mb-3">Gameloft Vietnam</div>
+                <p>
+                    <strong>Applaydu Project</strong><br>
+                    - Contributed to the "Applaydu" game, managing configurations for multi-device compatibility and
+                    resolving UI/font issues. Recognized as the first intern programmer in the credits.<br>
+                    - Developed mini-games like "Treasure Toss" and "Animalody," utilizing Git and Scrum for
+                    effective teamwork.<br>
+                    <em>Skills gained:</em> Mobile game compatibility, UI design for games, Git and Scrum teamwork.
+                <div style="padding:10% 0 35% 0;position:relative;">
+                    <iframe class="lazyload"
+                        data-src="https://player.vimeo.com/video/1029379454?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                        style="position:absolute;top:0;left:0;width:720px;height:480px;"
+                        title="Applaydu Game TreasureToss" loading="lazy">
+                    </iframe>
+                </div>
+
+                <iframe class="lazyload" width="720px" height="480px"
+                    data-src="https://www.youtube.com/embed/4JD4ru1F4jw"
+                    title="Animalody: Applaydu Kids Kinder Game Review 1080p Official Ferrero Trading Lux S.A. 4.4"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+
+                </p>
+
+            </div>
+            <div class="flex-shrink-0">
+                <span class="text-primary">Jun 2023 - Dec 2023</span>
+            </div>
+        </div>
+
+        <!-- Golden Sea Studio Intern -->
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">Game Developer Intern</h3>
+                <div class="subheading mb-3">Golden Sea Studio</div>
+                <p>
+                    <strong>Biboo - Drawing Game for Kids</strong><br>
+                    - Developed a creative drawing app designed for children, integrating animation and interactive
+                    features to encourage artistic exploration. Focused on intuitive UI design and adding playful
+                    animations to make drawing engaging for young users.<br>
+                    <em>Skills gained:</em> UI/UX design for kids, animation integration, creative problem-solving.
+                </p>
+                <p>
+                    <strong>Drink Game - Social Drinking Game</strong><br>
+                    - Worked on a board-style social game where players participate in mini-games and challenges
+                    with drinking elements, adding interactive UI and designing game logic for a seamless social
+                    experience.<br>
+                    <em>Skills gained:</em> Board game logic, interactive UI, game mechanics for social experiences.
+                </p>
+            </div>
+            <div class="flex-shrink-0">
+                <span class="text-primary">Apr 2023 - Jun 2023</span>
+            </div>
+        </div>
+
+
+        <!-- Marathon Education -->
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">Computer Science Education Counselor</h3>
+                <div class="subheading mb-3">Marathon Education</div>
+                <p>
+                    <strong>Marathon Talent AR App</strong><br>
+                    - Developed an AR app for the Marathon Talent Competition, leading Team Codi. Responsible for
+                    curriculum planning and delivering personalized learning plans.<br>
+                    <em>Skills gained:</em> AR app development, educational content planning, online teaching.
+                </p>
+                <iframe class="lazyload"
+                    data-src="https://player.vimeo.com/video/1029384069?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                    width="360" height="500" frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                    title="MARATHON'S TEACHER GOT TALENT" loading="lazy"
+                    style="position:relative;top:0;left:0;width:20%;height:100%;"></iframe>
+
+            </div>
+            <div class="flex-shrink-0">
+                <span class="text-primary">Mar 2023 - Present</span>
+            </div>
+        </div>
+
+        <!-- DigiUni Vietnam -->
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5" style="margin-top: 230px;">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">Information Technology Teacher</h3>
+                <div class="subheading mb-3"><a href="https://digiunivietnam.com/ve-giao-vien-cua-chung-toi/"
+                        target="_blank">DigiUni Vietnam</a></div>
+                <p>
+                    <strong>Programming and Robotics Teaching</strong><br>
+                    - Taught over 2,500 hours, guiding students to achieve awards such as IKCC Top 10, HKICO medals,
+                    and a Tech Award at Hanoi STEAM Hack Day. Mentored students in programming, robotics, and game
+                    design.<br>
+                    <em>Skills gained:</em> Teaching and mentoring, curriculum development, fostering creativity.
+                </p>
+                <div class="mb-3">
+                    <img class="lazyload" data-src="assets/img/webp/FirstClassDigiUni.webp" alt="DigiUni First Class"
+                        style="width: 100%; max-width: 400px;" loading="lazy">
+                    <img class="lazyload" data-src="assets/img/webp/RussiaKids.webp" alt="DigiUni Russia Class"
+                        style="width: 100%; max-width: 400px;" loading="lazy">
+                    <img class="lazyload" data-src="assets/img/webp/11class.webp" alt="DigiUni 1v1 Class"
+                        style="height: 100%; max-height: 180px;" loading="lazy">
                 </div>
             </div>
+            <div class="flex-shrink-0">
+                <span class="text-primary">Sep 2022 - Jun 2024</span>
+            </div>
+        </div>
 
-            <!-- DigiUni Vietnam -->
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5" style="margin-top: 230px;">
-                <div class="flex-grow-1">
-                    <h3 class="mb-0">Information Technology Teacher</h3>
-                    <div class="subheading mb-3"><a href="https://digiunivietnam.com/ve-giao-vien-cua-chung-toi/"
-                            target="_blank">DigiUni Vietnam</a></div>
-                    <p>
-                        <strong>Programming and Robotics Teaching</strong><br>
-                        - Taught over 2,500 hours, guiding students to achieve awards such as IKCC Top 10, HKICO medals,
-                        and a Tech Award at Hanoi STEAM Hack Day. Mentored students in programming, robotics, and game
-                        design.<br>
-                        <em>Skills gained:</em> Teaching and mentoring, curriculum development, fostering creativity.
+
+
+        <section class="resume-section" id="skills">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Skills</h2>
+
+                <div class="subheading mb-3">Technical Skills</div>
+                <ul class="list-inline dev-icons">
+                    <li class="list-inline-item"><i class="devicon-unity-original"></i></li> <!-- Unity -->
+                    <li class="list-inline-item"><i class="devicon-csharp-plain"></i></li> <!-- C# -->
+                    <li class="list-inline-item"><i class="fas fa-vr-cardboard"></i></li> <!-- AR/VR Development -->
+                    <li class="list-inline-item"><i class="devicon-photonengine-plain"></i></li> <!-- Photon -->
+                    <li class="list-inline-item"><i class="fas fa-pencil-ruler"></i></li>
+                    <!-- Shader Development -->
+                    <li class="list-inline-item"><i class="devicon-python-plain"></i></li> <!-- Python -->
+                    <li class="list-inline-item"><i class="fas fa-tools"></i></li> <!-- Tool Development -->
+                    <li class="list-inline-item"><i class="devicon-html5-plain"></i></li> <!-- HTML5 -->
+                    <li class="list-inline-item"><i class="devicon-css3-plain"></i></li> <!-- CSS3 -->
+                    <li class="list-inline-item"><i class="devicon-javascript-plain"></i></li> <!-- JavaScript -->
+                    <li class="list-inline-item"><i class="devicon-dotnetcore-plain"></i></li> <!-- .NET -->
+                    <li class="list-inline-item"><i class="devicon-googlecloud-plain"></i></li>
+                    <!-- Google Cloud Console -->
+                    <li class="list-inline-item"><i class="devicon-firebase-plain"></i></li> <!-- Firebase -->
+                    <li class="list-inline-item"><i class="fab fa-smartfox"></i></li> <!-- SmartFox Server -->
+                    <li class="list-inline-item"><i class="fas fa-network-wired"></i></li>
+                    <!-- Multiplayer Backend -->
+                </ul>
+
+                <!-- Technical Skills -->
+                <div class="subheading mb-3">Technical Skills</div>
+                <ul class="list-unstyled">
+                    <li><strong>Advanced:</strong>
+                        <ul>
+                            <li>Unity Game Development: AR/VR integration, shader development, real-time
+                                optimization, and tool automation</li>
+                            <li>Custom Tool Development: Unity Editor tools for efficiency, automated workflows, and
+                                custom utilities</li>
+                            <li>Real-time Multiplayer Systems: Photon and SmartFox Server integration, networking,
+                                and backend synchronization</li>
+                            <li>Python Scripting: Automation, data handling, and tool creation for VR/AR projects
+                                and Unity-based solutions</li>
+                        </ul>
+                    </li>
+                    <li><strong>Knowledge:</strong>
+                        <ul>
+                            <li>Shader Graph & HLSL: Advanced shader coding for performance and visual effects in
+                                Unity</li>
+                            <li>Google Console: Familiar with Google Console for basic project management and
+                                deployment tasks</li>
+                            <li>3D Modeling & Animation: Low-poly asset creation, asset integration, and animation
+                                for VR/AR in Unity</li>
+                            <li>Data Structures & Algorithms: Core algorithmic implementations in game and tool
+                                optimization</li>
+                            <li>Version Control Systems: Proficient with Git, GitHub, and GitLab for project
+                                collaboration</li>
+                        </ul>
+                    </li>
+                    <li><strong>Familiar:</strong>
+                        <ul>
+                            <li>HTML, CSS, JavaScript: Web development for interactive game portfolios and project
+                                documentation</li>
+                            <li>Blender 3D Asset Creation: Low-poly asset customization and export for Unity
+                                integration</li>
+                            <li>Usability Testing in VR/AR: Conducting VR usability studies and analyzing results
+                                for user experience improvement</li>
+                            <li>Agile & Scrum: Familiar with sprint planning, task prioritization, and team
+                                collaboration</li>
+                            <li>Swift & SwiftUI: Introductory experience with AR development on iOS platforms</li>
+                        </ul>
+                    </li>
+                    <li><strong>Fundamental:</strong>
+                        <ul>
+                            <li>.NET and C#: Basic development within the .NET framework for Unity projects</li>
+                            <li>Audio Programming with Wwise: Event handling and sound management in immersive VR/AR
+                                experiences</li>
+                            <li>Technical Writing & Documentation: Technical blog creation, project documentation,
+                                and tutorials</li>
+                            <li>UX/UI Prototyping: Prototyping interfaces and interaction designs for VR
+                                applications</li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+                <!-- Soft Skills -->
+                <div class="subheading mb-3">Soft Skills</div>
+                <ul class="list-unstyled">
+                    <li><strong>Advanced:</strong>
+                        <ul>
+                            <li>Mentoring & Coaching: extensive experience in training team members and interns</li>
+                            <li>Presentation & Public Speaking: skilled in delivering compelling presentations,
+                                including at high-profile events like NVIDIA AI Summit 2024</li>
+                            <li>Client Engagement & Persuasion: adept at understanding client needs, presenting
+                                solutions effectively, and building long-term client relationships</li>
+                            <li>Remote Support & Collaboration: strong capability in providing remote support,
+                                including real-time control and troubleshooting for complex systems</li>
+                            <li>Fluent English Communication: near-native English proficiency for seamless client
+                                interaction and technical presentations</li>
+                        </ul>
+                    </li>
+                    <li><strong>Knowledge:</strong>
+                        <ul>
+                            <li>Cross-functional Collaboration: effective in coordinating with 3D, UI, and design
+                                teams</li>
+                            <li>Teaching & Training: experienced in instructional design and content delivery</li>
+                        </ul>
+                    </li>
+                    <li><strong>Familiar:</strong>
+                        <ul>
+                            <li>Project Documentation: maintaining clear and detailed technical documentation</li>
+                            <li>Remote Work Adaptability: adept at remote team collaboration and maintaining
+                                productivity</li>
+                        </ul>
+                    </li>
+                    <li><strong>Fundamental:</strong>
+                        <ul>
+                            <li>Basic Project Management: understanding Agile and project milestone tracking</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+        <hr class="m-0" />
+        <!-- Interests -->
+        <section class="resume-section" id="interests">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Interests</h2>
+                <p>
+                    I am passionate about <strong>game development</strong>, particularly in <strong>technical art
+                        and 3D modeling</strong>. My journey includes continuous exploration of AR/VR and shader
+                    techniques, driven by a desire to push the boundaries of immersive gaming experiences.
+                </p>
+                <p>
+                    As an avid <strong>self-learner</strong>, I stay updated through personal projects and contests.
+                    Recently, I participated in the <strong>GMTK Game Jam</strong> with my game <a
+                        href="https://soratheweeb.itch.io/puffy-gmtk-jam-2024" target="_blank">Puffy</a>, alongside
+                    notable developers in the community. Additionally, my project <a
+                        href="https://billtruong003.itch.io/dragslice-culinary-journey" target="_blank">DragSlice</a>
+                    was featured in the Korea and Viet Game Contest, furthering my
+                    expertise in creative game mechanics.
+                </p>
+                <p>
+                    I also explore <strong>3D modeling</strong> with a focus on <strong>low-poly art</strong> and
+                    enjoy creating assets and shaders for game environments. You can view one of my models on
+                    Sketchfab:
+                </p>
+                <div class="sketchfab-embed-wrapper">
+                    <iframe class="lazyload" title="Katana" frameborder="0" allowfullscreen mozallowfullscreen="true"
+                        webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+                        data-src="https://sketchfab.com/models/e7cebd7d9309456596a39955334a9fee/embed"
+                        style="width:100%; height:300px;" loading="lazy"></iframe>
+                    <p style="font-size: 13px; font-weight: normal; color: #4A4A4A;">
+                        <a href="https://sketchfab.com/3d-models/katana-e7cebd7d9309456596a39955334a9fee?utm_medium=embed&utm_campaign=share-popup&utm_content=e7cebd7d9309456596a39955334a9fee"
+                            target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Katana
+                            Model</a> by
+                        <a href="https://sketchfab.com/truongbill003" target="_blank" rel="nofollow"
+                            style="font-weight: bold; color: #1CAAD9;">truongbill003</a>
                     </p>
-                    <div class="mb-3">
-                        <img class="lazyload" data-src="assets/img/webp/FirstClassDigiUni.webp"
-                            alt="DigiUni First Class" style="width: 100%; max-width: 400px;" loading="lazy">
-                        <img class="lazyload" data-src="assets/img/webp/RussiaKids.webp" alt="DigiUni Russia Class"
-                            style="width: 100%; max-width: 400px;" loading="lazy">
-                        <img class="lazyload" data-src="assets/img/webp/11class.webp" alt="DigiUni 1v1 Class"
-                            style="height: 100%; max-height: 180px;" loading="lazy">
-                    </div>
                 </div>
-                <div class="flex-shrink-0">
-                    <span class="text-primary">Sep 2022 - Jun 2024</span>
+                <div class="sketchfab-embed-wrapper">
+                    <iframe class="lazyload" title="Katana" frameborder="0" allowfullscreen mozallowfullscreen="true"
+                        webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+                        data-src="https://sketchfab.com/models/84b1475cdb5f416e9072f4a025bb6e86/embed"
+                        style="width:100%; height:300px;" loading="lazy"></iframe>
+                    <p style="font-size: 13px; font-weight: normal; color: #4A4A4A;">
+                        <a href="https://sketchfab.com/3d-models/dragon-heart-sword-84b1475cdb5f416e9072f4a025bb6e86?utm_medium=embed&utm_campaign=share-popup&utm_content=84b1475cdb5f416e9072f4a025bb6e86"
+                            target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Katana
+                            Model</a> by
+                        <a href="https://sketchfab.com/truongbill003" target="_blank" rel="nofollow"
+                            style="font-weight: bold; color: #1CAAD9;">truongbill003</a>
+                    </p>
                 </div>
             </div>
+        </section>
 
 
+        <section class="resume-section" id="personal-projects">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Personal Projects</h2>
 
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-
-                    <div class="subheading mb-3">Technical Skills</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="devicon-unity-original"></i></li> <!-- Unity -->
-                        <li class="list-inline-item"><i class="devicon-csharp-plain"></i></li> <!-- C# -->
-                        <li class="list-inline-item"><i class="fas fa-vr-cardboard"></i></li> <!-- AR/VR Development -->
-                        <li class="list-inline-item"><i class="devicon-photonengine-plain"></i></li> <!-- Photon -->
-                        <li class="list-inline-item"><i class="fas fa-pencil-ruler"></i></li>
-                        <!-- Shader Development -->
-                        <li class="list-inline-item"><i class="devicon-python-plain"></i></li> <!-- Python -->
-                        <li class="list-inline-item"><i class="fas fa-tools"></i></li> <!-- Tool Development -->
-                        <li class="list-inline-item"><i class="devicon-html5-plain"></i></li> <!-- HTML5 -->
-                        <li class="list-inline-item"><i class="devicon-css3-plain"></i></li> <!-- CSS3 -->
-                        <li class="list-inline-item"><i class="devicon-javascript-plain"></i></li> <!-- JavaScript -->
-                        <li class="list-inline-item"><i class="devicon-dotnetcore-plain"></i></li> <!-- .NET -->
-                        <li class="list-inline-item"><i class="devicon-googlecloud-plain"></i></li>
-                        <!-- Google Cloud Console -->
-                        <li class="list-inline-item"><i class="devicon-firebase-plain"></i></li> <!-- Firebase -->
-                        <li class="list-inline-item"><i class="fab fa-smartfox"></i></li> <!-- SmartFox Server -->
-                        <li class="list-inline-item"><i class="fas fa-network-wired"></i></li>
-                        <!-- Multiplayer Backend -->
-                    </ul>
-
-                    <!-- Technical Skills -->
-                    <div class="subheading mb-3">Technical Skills</div>
-                    <ul class="list-unstyled">
-                        <li><strong>Advanced:</strong>
-                            <ul>
-                                <li>Unity Game Development: AR/VR integration, shader development, real-time
-                                    optimization, and tool automation</li>
-                                <li>Custom Tool Development: Unity Editor tools for efficiency, automated workflows, and
-                                    custom utilities</li>
-                                <li>Real-time Multiplayer Systems: Photon and SmartFox Server integration, networking,
-                                    and backend synchronization</li>
-                                <li>Python Scripting: Automation, data handling, and tool creation for VR/AR projects
-                                    and Unity-based solutions</li>
-                            </ul>
-                        </li>
-                        <li><strong>Knowledge:</strong>
-                            <ul>
-                                <li>Shader Graph & HLSL: Advanced shader coding for performance and visual effects in
-                                    Unity</li>
-                                <li>Google Console: Familiar with Google Console for basic project management and
-                                    deployment tasks</li>
-                                <li>3D Modeling & Animation: Low-poly asset creation, asset integration, and animation
-                                    for VR/AR in Unity</li>
-                                <li>Data Structures & Algorithms: Core algorithmic implementations in game and tool
-                                    optimization</li>
-                                <li>Version Control Systems: Proficient with Git, GitHub, and GitLab for project
-                                    collaboration</li>
-                            </ul>
-                        </li>
-                        <li><strong>Familiar:</strong>
-                            <ul>
-                                <li>HTML, CSS, JavaScript: Web development for interactive game portfolios and project
-                                    documentation</li>
-                                <li>Blender 3D Asset Creation: Low-poly asset customization and export for Unity
-                                    integration</li>
-                                <li>Usability Testing in VR/AR: Conducting VR usability studies and analyzing results
-                                    for user experience improvement</li>
-                                <li>Agile & Scrum: Familiar with sprint planning, task prioritization, and team
-                                    collaboration</li>
-                                <li>Swift & SwiftUI: Introductory experience with AR development on iOS platforms</li>
-                            </ul>
-                        </li>
-                        <li><strong>Fundamental:</strong>
-                            <ul>
-                                <li>.NET and C#: Basic development within the .NET framework for Unity projects</li>
-                                <li>Audio Programming with Wwise: Event handling and sound management in immersive VR/AR
-                                    experiences</li>
-                                <li>Technical Writing & Documentation: Technical blog creation, project documentation,
-                                    and tutorials</li>
-                                <li>UX/UI Prototyping: Prototyping interfaces and interaction designs for VR
-                                    applications</li>
-                            </ul>
-                        </li>
-                    </ul>
-
-
-                    <!-- Soft Skills -->
-                    <div class="subheading mb-3">Soft Skills</div>
-                    <ul class="list-unstyled">
-                        <li><strong>Advanced:</strong>
-                            <ul>
-                                <li>Mentoring & Coaching: extensive experience in training team members and interns</li>
-                                <li>Presentation & Public Speaking: skilled in delivering compelling presentations,
-                                    including at high-profile events like NVIDIA AI Summit 2024</li>
-                                <li>Client Engagement & Persuasion: adept at understanding client needs, presenting
-                                    solutions effectively, and building long-term client relationships</li>
-                                <li>Remote Support & Collaboration: strong capability in providing remote support,
-                                    including real-time control and troubleshooting for complex systems</li>
-                                <li>Fluent English Communication: near-native English proficiency for seamless client
-                                    interaction and technical presentations</li>
-                            </ul>
-                        </li>
-                        <li><strong>Knowledge:</strong>
-                            <ul>
-                                <li>Cross-functional Collaboration: effective in coordinating with 3D, UI, and design
-                                    teams</li>
-                                <li>Teaching & Training: experienced in instructional design and content delivery</li>
-                            </ul>
-                        </li>
-                        <li><strong>Familiar:</strong>
-                            <ul>
-                                <li>Project Documentation: maintaining clear and detailed technical documentation</li>
-                                <li>Remote Work Adaptability: adept at remote team collaboration and maintaining
-                                    productivity</li>
-                            </ul>
-                        </li>
-                        <li><strong>Fundamental:</strong>
-                            <ul>
-                                <li>Basic Project Management: understanding Agile and project milestone tracking</li>
-                            </ul>
-                        </li>
-                    </ul>
-
+                <!-- Project 1: Auto Subtitle Tool -->
+                <div class="subheading mb-3">Auto Subtitle Tool</div>
+                <p>
+                    Developed a tool in Python to automatically generate subtitles for videos by processing audio
+                    tracks. This project helped me improve my Python scripting skills, especially in handling file
+                    I/O
+                    and working with external libraries for audio processing. The tool utilizes libraries like
+                    SpeechRecognition and Pytube to download videos and generate subtitles efficiently.
+                </p>
+                <div style="padding:20% 0 0 0;position:relative; width: 100%; max-width: 300px;">
+                    <iframe class="lazyload"
+                        data-src="https://player.vimeo.com/video/1029371396?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                        title="Animal Push Royale Trailer" loading="lazy"></iframe>
                 </div>
-            </section>
 
-            <hr class="m-0" />
-            <!-- Interests -->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <p>
-                        I am passionate about <strong>game development</strong>, particularly in <strong>technical art
-                            and 3D modeling</strong>. My journey includes continuous exploration of AR/VR and shader
-                        techniques, driven by a desire to push the boundaries of immersive gaming experiences.
-                    </p>
-                    <p>
-                        As an avid <strong>self-learner</strong>, I stay updated through personal projects and contests.
-                        Recently, I participated in the <strong>GMTK Game Jam</strong> with my game <a
-                            href="https://soratheweeb.itch.io/puffy-gmtk-jam-2024" target="_blank">Puffy</a>, alongside
-                        notable developers in the community. Additionally, my project <a
-                            href="https://billtruong003.itch.io/dragslice-culinary-journey"
-                            target="_blank">DragSlice</a> was featured in the Korea and Viet Game Contest, furthering my
-                        expertise in creative game mechanics.
-                    </p>
-                    <p>
-                        I also explore <strong>3D modeling</strong> with a focus on <strong>low-poly art</strong> and
-                        enjoy creating assets and shaders for game environments. You can view one of my models on
-                        Sketchfab:
-                    </p>
-                    <div class="sketchfab-embed-wrapper">
-                        <iframe class="lazyload" title="Katana" frameborder="0" allowfullscreen
-                            mozallowfullscreen="true" webkitallowfullscreen="true"
-                            allow="autoplay; fullscreen; xr-spatial-tracking"
-                            data-src="https://sketchfab.com/models/e7cebd7d9309456596a39955334a9fee/embed"
-                            style="width:100%; height:300px;" loading="lazy"></iframe>
-                        <p style="font-size: 13px; font-weight: normal; color: #4A4A4A;">
-                            <a href="https://sketchfab.com/3d-models/katana-e7cebd7d9309456596a39955334a9fee?utm_medium=embed&utm_campaign=share-popup&utm_content=e7cebd7d9309456596a39955334a9fee"
-                                target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Katana
-                                Model</a> by
-                            <a href="https://sketchfab.com/truongbill003" target="_blank" rel="nofollow"
-                                style="font-weight: bold; color: #1CAAD9;">truongbill003</a>
+                <a href="https://www.linkedin.com/posts/billtruong003_videoediting-subtitles-accessibility-activity-7205433442560278528-Iaol?utm_source=share&utm_medium=member_desktop"
+                    target="_blank">My Shared Post In LinkedIn</a>
+                <a href="https://github.com/your-username/auto-subtitle-tool" target="_blank">View Project on
+                    GitHub</a>
+
+                <!-- Project 2: Chatbot API Website -->
+                <div class="subheading mb-3">Chatbot API Website</div>
+                <p>
+                    Built a small website using HTML, CSS, and JavaScript to experiment with APIs, specifically the
+                    Gemini API for chatbot integration. This project was aimed at learning how to connect a frontend
+                    application to a backend service, manage API requests and responses, and handle asynchronous
+                    JavaScript.
+                </p>
+                <img class="lazyload" data-src="https://github.com/billtruong003/ChatBotGeminiAPIs/raw/main/hitori.png"
+                    alt="Chatbot API Website" class="project-image mb-3" style="width: 100%; max-width: 300px;"
+                    loading="lazy"><br>
+                <a href="https://github.com/billtruong003/ChatBotGeminiAPIs" target="_blank">Visit Chatbot API
+                    GitHub</a>
+
+                <!-- Project 3: Scene Change Tool for Unity Editor -->
+                <div class="subheading mb-3">Scene Change Tool for Unity Editor</div>
+
+                <p>
+                    Created a Unity Editor tool to automate the process of changing scenes in a game development
+                    environment. This tool uses custom editor scripts in C# to streamline the workflow of scene
+                    management, saving time for developers by providing quick access to scene navigation, loading,
+                    and
+                    unloading directly from the editor interface.
+                </p>
+                <img class="lazyload"
+                    data-src="https://github.com/billtruong003/SceneSwitcherToolUnity/blob/main/Editor/Resources/Image/pic3.png?raw=true"
+                    alt="Scene Change Tool for Unity Editor" class="project-image mb-3"
+                    style="width: 100%; max-width: 300px;" loading="lazy"><br>
+                <a href="https://www.linkedin.com/posts/billtruong003_unity3d-unity2d-unityvr-activity-7201829903476957185-6U3S?utm_source=share&utm_medium=member_desktop"
+                    target="_blank">My Shared Post In LinkedIn</a>
+                <a href="https://github.com/billtruong003/SceneSwitcherToolUnity" target="_blank">View Project on
+                    GitHub</a>
+
+                <!-- Project 4: Spaceship Modular Build -->
+                <div class="subheading mb-3">Spaceship Modular Build</div>
+
+                <p>
+                    Developed a modular spaceship building tool that allows for extensive customization in Unity.
+                    This project utilizes
+                    modular components to let users easily design and assemble different spaceship configurations
+                    with drag-and-drop
+                    functionality. The tool enables flexible design processes for game developers or enthusiasts who
+                    need to prototype
+                    spaceship models efficiently.
+                </p>
+                <p>
+                    Key features include:
+                <ul>
+                    <li>Customizable parts for modular spaceship assembly</li>
+                    <li>User-friendly drag-and-drop functionality</li>
+                    <li>Supports quick prototyping for various spaceship designs</li>
+                </ul>
+                </p>
+                <article class="blog-post">
+                    <h3 style="color: #0077b5; font-size: 20px;"><i class="fab fa-linkedin fa-1x"></i> My LinkedIn
+                        Post</h3>
+                    <iframe class="lazyload"
+                        data-src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7247097126483058688"
+                        height="1024" width="1024" frameborder="20%" allowfullscreen="" title="Embedded post"></iframe>
+                </article>
+                <a href="https://billtruong003.github.io/SpaceshipModularBuild/" target="_blank">Explore the
+                    Spaceship Modular Build</a><br>
+                <a href="https://github.com/billtruong003/SpaceshipModularBuild" target="_blank">View Project on
+                    GitHub</a>
+
+            </div>
+        </section>
+
+        <hr class="m-0" />
+        <!-- Education-->
+        <section class="resume-section" id="education">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Education</h2>
+
+                <!-- FPT University -->
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">FPT University</h3>
+                        <div class="subheading mb-3">Bachelor's degree in Computer Software Engineering</div>
+                        <p>
+                            Pursuing a Bachelor’s degree with a major in Software Engineering, focusing on
+                            programming
+                            languages such as Python and C#. Awarded a 30% scholarship among over 10,000 candidates.
+                            Actively participating in various academic and extracurricular activities to enhance
+                            both
+                            technical and soft skills.
                         </p>
-                    </div>
-                    <div class="sketchfab-embed-wrapper">
-                        <iframe class="lazyload" title="Katana" frameborder="0" allowfullscreen
-                            mozallowfullscreen="true" webkitallowfullscreen="true"
-                            allow="autoplay; fullscreen; xr-spatial-tracking"
-                            data-src="https://sketchfab.com/models/84b1475cdb5f416e9072f4a025bb6e86/embed"
-                            style="width:100%; height:300px;" loading="lazy"></iframe>
-                        <p style="font-size: 13px; font-weight: normal; color: #4A4A4A;">
-                            <a href="https://sketchfab.com/3d-models/dragon-heart-sword-84b1475cdb5f416e9072f4a025bb6e86?utm_medium=embed&utm_campaign=share-popup&utm_content=84b1475cdb5f416e9072f4a025bb6e86"
-                                target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Katana
-                                Model</a> by
-                            <a href="https://sketchfab.com/truongbill003" target="_blank" rel="nofollow"
-                                style="font-weight: bold; color: #1CAAD9;">truongbill003</a>
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="resume-section" id="personal-projects">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Personal Projects</h2>
-
-                    <!-- Project 1: Auto Subtitle Tool -->
-                    <div class="subheading mb-3">Auto Subtitle Tool</div>
-                    <p>
-                        Developed a tool in Python to automatically generate subtitles for videos by processing audio
-                        tracks. This project helped me improve my Python scripting skills, especially in handling file
-                        I/O
-                        and working with external libraries for audio processing. The tool utilizes libraries like
-                        SpeechRecognition and Pytube to download videos and generate subtitles efficiently.
-                    </p>
-                    <div style="padding:20% 0 0 0;position:relative; width: 100%; max-width: 300px;">
-                        <iframe class="lazyload"
-                            data-src="https://player.vimeo.com/video/1029371396?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                            frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                            style="position:absolute;top:0;left:0;width:100%;height:100%;"
-                            title="Animal Push Royale Trailer" loading="lazy"></iframe>
-                    </div>
-
-                    <a href="https://www.linkedin.com/posts/billtruong003_videoediting-subtitles-accessibility-activity-7205433442560278528-Iaol?utm_source=share&utm_medium=member_desktop"
-                        target="_blank">My Shared Post In LinkedIn</a>
-                    <a href="https://github.com/your-username/auto-subtitle-tool" target="_blank">View Project on
-                        GitHub</a>
-
-                    <!-- Project 2: Chatbot API Website -->
-                    <div class="subheading mb-3">Chatbot API Website</div>
-                    <p>
-                        Built a small website using HTML, CSS, and JavaScript to experiment with APIs, specifically the
-                        Gemini API for chatbot integration. This project was aimed at learning how to connect a frontend
-                        application to a backend service, manage API requests and responses, and handle asynchronous
-                        JavaScript.
-                    </p>
-                    <img class="lazyload"
-                        data-src="https://github.com/billtruong003/ChatBotGeminiAPIs/raw/main/hitori.png"
-                        alt="Chatbot API Website" class="project-image mb-3" style="width: 100%; max-width: 300px;"
-                        loading="lazy"><br>
-                    <a href="https://github.com/billtruong003/ChatBotGeminiAPIs" target="_blank">Visit Chatbot API
-                        GitHub</a>
-
-                    <!-- Project 3: Scene Change Tool for Unity Editor -->
-                    <div class="subheading mb-3">Scene Change Tool for Unity Editor</div>
-
-                    <p>
-                        Created a Unity Editor tool to automate the process of changing scenes in a game development
-                        environment. This tool uses custom editor scripts in C# to streamline the workflow of scene
-                        management, saving time for developers by providing quick access to scene navigation, loading,
-                        and
-                        unloading directly from the editor interface.
-                    </p>
-                    <img class="lazyload"
-                        data-src="https://github.com/billtruong003/SceneSwitcherToolUnity/blob/main/Editor/Resources/Image/pic3.png?raw=true"
-                        alt="Scene Change Tool for Unity Editor" class="project-image mb-3"
-                        style="width: 100%; max-width: 300px;" loading="lazy"><br>
-                    <a href="https://www.linkedin.com/posts/billtruong003_unity3d-unity2d-unityvr-activity-7201829903476957185-6U3S?utm_source=share&utm_medium=member_desktop"
-                        target="_blank">My Shared Post In LinkedIn</a>
-                    <a href="https://github.com/billtruong003/SceneSwitcherToolUnity" target="_blank">View Project on
-                        GitHub</a>
-
-                    <!-- Project 4: Spaceship Modular Build -->
-                    <div class="subheading mb-3">Spaceship Modular Build</div>
-
-                    <p>
-                        Developed a modular spaceship building tool that allows for extensive customization in Unity.
-                        This project utilizes
-                        modular components to let users easily design and assemble different spaceship configurations
-                        with drag-and-drop
-                        functionality. The tool enables flexible design processes for game developers or enthusiasts who
-                        need to prototype
-                        spaceship models efficiently.
-                    </p>
-                    <p>
-                        Key features include:
-                    <ul>
-                        <li>Customizable parts for modular spaceship assembly</li>
-                        <li>User-friendly drag-and-drop functionality</li>
-                        <li>Supports quick prototyping for various spaceship designs</li>
-                    </ul>
-                    </p>
-                    <article class="blog-post">
-                        <h3 style="color: #0077b5; font-size: 20px;"><i class="fab fa-linkedin fa-1x"></i> My LinkedIn
-                            Post</h3>
-                        <iframe class="lazyload"
-                            data-src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7247097126483058688"
-                            height="1024" width="1024" frameborder="20%" allowfullscreen=""
-                            title="Embedded post"></iframe>
-                    </article>
-                    <a href="https://billtruong003.github.io/SpaceshipModularBuild/" target="_blank">Explore the
-                        Spaceship Modular Build</a><br>
-                    <a href="https://github.com/billtruong003/SpaceshipModularBuild" target="_blank">View Project on
-                        GitHub</a>
-
-                </div>
-            </section>
-
-            <hr class="m-0" />
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-
-                    <!-- FPT University -->
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">FPT University</h3>
-                            <div class="subheading mb-3">Bachelor's degree in Computer Software Engineering</div>
-                            <p>
-                                Pursuing a Bachelor’s degree with a major in Software Engineering, focusing on
-                                programming
-                                languages such as Python and C#. Awarded a 30% scholarship among over 10,000 candidates.
-                                Actively participating in various academic and extracurricular activities to enhance
-                                both
-                                technical and soft skills.
-                            </p>
-                            <!-- Thêm ảnh cho FPT University -->
-                            <div class="mb-3">
-                                <img class="lazyload" data-src="assets/img/webp/FPT Schorlaship.jpg"
-                                    alt="FPT University Campus" style="width: 100%; max-width: 150px;" loading="lazy">
-                                <img class="lazyload" data-src="assets/img/webp/FPT Schorlaship 1.jpg"
-                                    alt="FPT University Students" style="width: 100%; max-width: 150px;" loading="lazy">
-                            </div>
+                        <!-- Thêm ảnh cho FPT University -->
+                        <div class="mb-3">
+                            <img class="lazyload" data-src="assets/img/webp/FPT Schorlaship.jpg"
+                                alt="FPT University Campus" style="width: 100%; max-width: 150px;" loading="lazy">
+                            <img class="lazyload" data-src="assets/img/webp/FPT Schorlaship 1.jpg"
+                                alt="FPT University Students" style="width: 100%; max-width: 150px;" loading="lazy">
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2022 - 2025</span></div>
                     </div>
+                    <div class="flex-shrink-0"><span class="text-primary">2022 - 2025</span></div>
+                </div>
 
-                    <!-- EMASI International Bilingual Schools -->
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">EMASI International Bilingual Schools</h3>
-                            <div class="subheading mb-3">High School Diploma</div>
-                            <p>
-                                Graduated with a High School Diploma, achieving a GPA of 9.2/10. Actively involved in
-                                school
-                                activities such as President of Pacific House, Fitness and Healthy Club, winning two
-                                Silver
-                                Medals in IvyPrep English Debate, 1st Prize in Christmas Game Coding competition, and
-                                serving as an MC for school events. Developed strong leadership, communication, and
-                                academic
-                                skills through a diverse range of extracurricular activities.
-                            </p>
-                            <!-- Thêm ảnh cho EMASI International Bilingual Schools -->
-                            <div class="mb-3">
-                                <img class="lazyload" data-src="assets/img/webp/YearBook.webp"
-                                    alt="EMASI Yearbook Photography" style="height: 100%; max-height: 150px;"
-                                    loading="lazy">
-                                <img class="lazyload" data-src="assets/img/webp/EMASI Graduate.webp"
+                <!-- EMASI International Bilingual Schools -->
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">EMASI International Bilingual Schools</h3>
+                        <div class="subheading mb-3">High School Diploma</div>
+                        <p>
+                            Graduated with a High School Diploma, achieving a GPA of 9.2/10. Actively involved in
+                            school
+                            activities such as President of Pacific House, Fitness and Healthy Club, winning two
+                            Silver
+                            Medals in IvyPrep English Debate, 1st Prize in Christmas Game Coding competition, and
+                            serving as an MC for school events. Developed strong leadership, communication, and
+                            academic
+                            skills through a diverse range of extracurricular activities.
+                        </p>
+                        <!-- Thêm ảnh cho EMASI International Bilingual Schools -->
+                        <div class="mb-3">
+                            <img class="lazyload" data-src="assets/img/webp/YearBook.webp"
+                                alt="EMASI Yearbook Photography" style="height: 100%; max-height: 150px;"
+                                loading="lazy">
+                            <img class="lazyload" data-src="assets/img/webp/EMASI Graduate.webp"
+                                alt="EMASI Graduation Event" style="height: 100%; max-height: 150px;" loading="lazy">
+                            <a href="https://www.joshuaewanjames.com/education-at-emasi-van-phuc/2022/2021-2022-overview"
+                                target="_blank">
+                                <img class="lazyload"
+                                    data-src="https://lirp.cdn-website.com/a37ee961/dms3rep/multi/opt/MicrosoftTeams-image+%2850%29-1920w.png"
                                     alt="EMASI Graduation Event" style="height: 100%; max-height: 150px;"
                                     loading="lazy">
-                                <a href="https://www.joshuaewanjames.com/education-at-emasi-van-phuc/2022/2021-2022-overview"
-                                    target="_blank">
-                                    <img class="lazyload"
-                                        data-src="https://lirp.cdn-website.com/a37ee961/dms3rep/multi/opt/MicrosoftTeams-image+%2850%29-1920w.png"
-                                        alt="EMASI Graduation Event" style="height: 100%; max-height: 150px;"
-                                        loading="lazy">
-                                </a>
-                            </div>
+                            </a>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Jun 2019 - Aug 2022</span></div>
                     </div>
+                    <div class="flex-shrink-0"><span class="text-primary">Jun 2019 - Aug 2022</span></div>
                 </div>
-            </section>
-            <hr class="m-0" />
+            </div>
+        </section>
+        <hr class="m-0" />
 
 
-            <hr class="m-0" />
-            <!-- Awards-->
-            <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Certifications</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            <strong>FPT Scholarship Winner (2020-2022):</strong> Awarded to top 30% candidates among
-                            over 10,000 applicants.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            <strong>First Prize Game Coding Competition - EMASI (2020):</strong> Won in a school-wide
-                            competition focused on game design.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            <strong>Unity Development Certification - 3DVietPro:</strong> Completed a comprehensive
-                            Unity training program.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            <strong>Python Programming Advanced - UNICA:</strong> Advanced certification in Python
-                            programming.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            <strong>IELTS Certificate - Score: 6.5</strong>
-                        </li>
-                    </ul>
-                </div>
-                <img class="lazyload" data-src="assets/img/webp/Achievement.webp" alt="Awards"
-                    style="height: 100%; max-height: 300px; border-radius: 10px; border: 5px solid black;"
-                    loading="lazy">
-            </section>
+        <hr class="m-0" />
+        <!-- Awards-->
+        <section class="resume-section" id="awards">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Awards & Certifications</h2>
+                <ul class="fa-ul mb-0">
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        <strong>FPT Scholarship Winner (2020-2022):</strong> Awarded to top 30% candidates among
+                        over 10,000 applicants.
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        <strong>First Prize Game Coding Competition - EMASI (2020):</strong> Won in a school-wide
+                        competition focused on game design.
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        <strong>Unity Development Certification - 3DVietPro:</strong> Completed a comprehensive
+                        Unity training program.
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        <strong>Python Programming Advanced - UNICA:</strong> Advanced certification in Python
+                        programming.
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        <strong>IELTS Certificate - Score: 6.5</strong>
+                    </li>
+                </ul>
+            </div>
+            <img class="lazyload" data-src="assets/img/webp/Achievement.webp" alt="Awards"
+                style="height: 100%; max-height: 300px; border-radius: 10px; border: 5px solid black;" loading="lazy">
+        </section>
 
         </div>
 
