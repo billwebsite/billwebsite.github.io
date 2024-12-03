@@ -20,5 +20,9 @@
   "license": "ISC",
   "dependencies": {
     "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "terser": "^5.36.0",
+    "uglify-js": "^3.19.3"
   }
 }

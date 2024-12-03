@@ -13,9 +13,10 @@ window.addEventListener('DOMContentLoaded', () => {
     const responsiveNavItems = document.querySelectorAll('#navbarResponsive .nav-link');
 
     if (navbarToggler) {
-        // Kiểm tra sự hiển thị của navbarToggler
+        // Kiểm tra sự hiển thị của navbarToggler chỉ một lần
         const isNavbarVisible = window.getComputedStyle(navbarToggler).display !== 'none';
 
+        // Nếu navbarToggler đang hiển thị, gắn sự kiện click cho các liên kết
         if (isNavbarVisible) {
             responsiveNavItems.forEach(navItem => {
                 navItem.addEventListener('click', () => {
