@@ -741,7 +741,12 @@
         <script src="https://player.vimeo.com/api/player.js" async></script>
 
         <!-- Font Awesome JS -->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous" async></script>
+        <!-- Defer non-critical CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"
+            media="print" onload="this.media='all'">
+        <noscript>
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        </noscript>
 
         <!-- Devicon JS -->
         <script src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.js" async></script>
