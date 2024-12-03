@@ -2,27 +2,36 @@
   "name": "billwebsite.github.io",
   "version": "1.0.0",
   "description": "My personal portfolio website",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "minify-js": "terser js/scripts.js -o js/scripts.min.js",
+    "build-images": "node minifyImages.js",
+    "start": "echo \"Run the server or deploy your site\" && exit 0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/myusername/billwebsite"
+    "url": "https://github.com/billwebsite/billwebsite.github.io"
   },
   "keywords": [
+    "billthedev",
     "portfolio",
     "website",
     "html",
-    "css"
+    "css",
+    "javascript",
+    "game developer",
+    "unity developer",
+    "vr/AR",
+    "web development"
   ],
-  "author": "Your Name",
+  "author": "Bill The Dev",
   "license": "ISC",
   "dependencies": {
     "sharp": "^0.33.5"
   },
   "devDependencies": {
     "terser": "^5.36.0",
-    "uglify-js": "^3.19.3"
+    "uglify-js": "^3.19.3",
+    "imagemin": "^8.0.0"
   }
 }
